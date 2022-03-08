@@ -11,22 +11,123 @@
 		<link rel="stylesheet" href="dist/reveal.css" />
 		<link rel="stylesheet" href="dist/theme/black.css" />
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+
+		<style>
+			.heading {
+				margin: 10px;
+				padding: 10px;
+				text-align: center;
+				font-size: 32px;
+			}
+			.slideshows {
+				display: flex;
+				flex-direction: row
+			}
+			.slideshow {
+				width: 50%;
+				height: 100vh
+			}
+		</style>
 	</head>
 	<body>
-		<div style="display: flex; flex-direction: row;">
-			<div class="reveal deck1" style="width: 50%; height: 100vh">
+		
+		<div class="slideshows">
+			<div class="heading">
+				<strong>Way U Work</strong>
+			</div>
+			<div class="reveal deck1 slideshow">
 				<div class="slides">
 					<section>
-						<section>Slide 1</section>
-						<section>Slide 2</section>
+						<section>
+							<img
+								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back01.jpg"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back02.jpg"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back03.jpg"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back04.jpg"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back05.jpg"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back06.jpg"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back07.jpg"
+								alt=""
+							/>
+						</section>
 					</section>
 				</div>
 			</div>
 			<div class="reveal deck2" style="width: 50%; height: 100vh">
 				<div class="slides">
 					<section>
-						<section>Slide 3</section>
-						<section>Slide 4</section>
+						<section>
+							<img
+								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris_blend.png"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris1_blue.png"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris2_blue.png"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris2_brown.png"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris4_blue.png"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_brown.png"
+								alt=""
+							/>
+						</section>
+						<section>
+							<img
+								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_blue.s2014.png"
+								alt=""
+							/>
+						</section>
 					</section>
 				</div>
 			</div>
@@ -37,12 +138,22 @@
 			let deck1 = new Reveal(document.querySelector(".deck1"), {
 				embedded: true,
 				keyboardCondition: "focused",
-				
+				controlsLayout: "edges",
+				autoSlide: 1000,
+				autoSlideStoppable: true,
+				loop: true,
+				shuffle: true,
 			});
-			
+
 			deck1.initialize();
 			let deck2 = new Reveal(document.querySelector(".deck2"), {
 				embedded: true,
+				controlsLayout: "edges",
+				keyboardCondition: "focused",
+				autoSlide: 1000,
+				autoSlideStoppable: true,
+				loop: true,
+				shuffle: true,
 			});
 			deck2.initialize();
 		</script>
@@ -51,7 +162,6 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-		</script>
+		<script></script>
 	</body>
 </html>
