@@ -11,120 +11,167 @@
 		<link rel="stylesheet" href="dist/reveal.css" />
 		<link rel="stylesheet" href="dist/theme/black.css" />
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+		<link
+			href="//db.onlinewebfonts.com/c/4a373e70cd01dec089c1dd1185ceba51?family=Maison+Neue"
+			rel="stylesheet"
+			type="text/css"
+		/>
 
 		<style>
+			body {
+				background-color: #2a2a2e;
+			}
+			.logo {
+				z-index: 3;
+				margin-top: 50px;
+				margin-left: 20px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.navigation {
+				z-index: 3;
+				margin-top: 50px;
+				margin-right: 20px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin-bottom: 100px;
+			}
 			.heading {
-				margin: 10px;
-				padding: 10px;
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
 				text-align: center;
-				font-size: 32px;
+				z-index: 3;
+				top: 250px;
+			}
+			.take-me {
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
+				text-align: center;
+				z-index: 3;
+				top: 450px;
+			}
+			.take-me-text {
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
+				text-align: center;
+				z-index: 4;
+				top: 520px;
+			}
+			.take-me-text span {
+				font-family: "Maison Neue";
+				/* font-style: normal; */
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 18px;
+			}
+			.navigation * {
+				font-family: "Maison Neue";
+				font-style: normal;
+				font-weight: 800;
+				font-size: 24px;
+				line-height: 24px;
+				margin-left: 32px;
+
+				color: #ffffff;
+
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 			}
 			.slideshows {
 				display: flex;
-				flex-direction: row
+				flex-direction: row;
 			}
-			.slideshow {
+			.slideshow1 {
+				width: 60%;
+				height: 100vh;
+				position: absolute;
+				left: 40px;
+			}
+			.slideshow2 {
 				width: 50%;
-				height: 100vh
+				height: 100vh;
+				right: 40px;
+				position: absolute;
+			}
+			.reveal .slide1 {
+				z-index: 1;
+			}
+
+			.reveal .slide2 {
+				height: 50% !important;
+				z-index: 2;
+				margin-right: 100px;
+			}
+			.reveal .slide-menu-button {
+				right: 30px;
 			}
 		</style>
 	</head>
 	<body>
-		
 		<div class="slideshows">
-			<div class="heading">
-				<strong>Way U Work</strong>
+			<div class="logo">
+				<img src="/images/WUW LOGO-31 1.svg" alt="logo" />
 			</div>
-			<div class="reveal deck1 slideshow">
-				<div class="slides">
-					<section>
+			<div class="navigation">
+				<strong>Locations</strong>
+				<strong>Solutions</strong>
+				<strong>Ideas</strong>
+				<img src="/images/Vector.png" alt="profile" />
+			</div>
+			<div class="heading">
+				<img src="/images/WAYUWORK_WEBSITE_LOGO_2.png" />
+			</div>
+			<div class="take-me">
+				<img src="/images/Ellipse 1.png" />
+			</div>
+			<div class="take-me-text">
+				<span>Take me</span>
+			</div>
+			<div class="reveal deck1 slideshow1">
+				<div class="slides slide1">
+					<section data-background-color="#2A2A2E">
 						<section>
-							<img
-								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back01.jpg"
-								alt=""
-							/>
+							<img src="/images/image 1 (2).png" />
 						</section>
 						<section>
 							<img
-								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back02.jpg"
-								alt=""
+								src="/images/rezha-ramadhan-sV8M_Lkg60Y-unsplash 1 (2).png"
 							/>
 						</section>
 						<section>
-							<img
-								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back03.jpg"
-								alt=""
-							/>
-						</section>
-						<section>
-							<img
-								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back04.jpg"
-								alt=""
-							/>
-						</section>
-						<section>
-							<img
-								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back05.jpg"
-								alt=""
-							/>
-						</section>
-						<section>
-							<img
-								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back06.jpg"
-								alt=""
-							/>
-						</section>
-						<section>
-							<img
-								src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back07.jpg"
-								alt=""
-							/>
+							<img src="/images/mateo-fernandez-XTC538P_eWk-unsplash 1.png" />
 						</section>
 					</section>
 				</div>
 			</div>
-			<div class="reveal deck2" style="width: 50%; height: 100vh">
-				<div class="slides">
-					<section>
+			<div class="reveal deck2 slideshow2">
+				<div class="slides slide2">
+					<section data-background-color="#2A2A2E">
 						<section>
 							<img
-								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris_blend.png"
+								src="/images/rachel-mcdermott-0fN7Fxv1eWA-unsplash 1 (2).png"
 								alt=""
 							/>
 						</section>
 						<section>
 							<img
-								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris1_blue.png"
+								src="/images/haris-memovic-IdrhaEt2Z9U-unsplash 1.png"
 								alt=""
 							/>
 						</section>
 						<section>
 							<img
-								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris2_blue.png"
-								alt=""
-							/>
-						</section>
-						<section>
-							<img
-								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris2_brown.png"
-								alt=""
-							/>
-						</section>
-						<section>
-							<img
-								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris4_blue.png"
-								alt=""
-							/>
-						</section>
-						<section>
-							<img
-								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_brown.png"
-								alt=""
-							/>
-						</section>
-						<section>
-							<img
-								src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_blue.s2014.png"
+								src="/images/bave-pictures-fl7bASYZgXo-unsplash 1 (1).png"
 								alt=""
 							/>
 						</section>
@@ -138,8 +185,8 @@
 			let deck1 = new Reveal(document.querySelector(".deck1"), {
 				embedded: true,
 				keyboardCondition: "focused",
-				controlsLayout: "edges",
-				autoSlide: 1000,
+				controls: false,
+				autoSlide: 3000,
 				autoSlideStoppable: true,
 				loop: true,
 				shuffle: true,
@@ -148,9 +195,9 @@
 			deck1.initialize();
 			let deck2 = new Reveal(document.querySelector(".deck2"), {
 				embedded: true,
-				controlsLayout: "edges",
+				controls: false,
 				keyboardCondition: "focused",
-				autoSlide: 1000,
+				autoSlide: 3000,
 				autoSlideStoppable: true,
 				loop: true,
 				shuffle: true,
